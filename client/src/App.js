@@ -4,35 +4,15 @@ import axios from 'axios';
 
 import './App.scss';
 import Home from './components/Home/Home';
+import Header from './components/Header/Header'
+import PageC from './components/PageC/PageC';
 import PageB from './components/PageB/PageB';
 import PageA from './components/PageA/PageA';
 import PageE from './components/PageE/PageE';
-import Header from './components/Header/Header';
 
-class App extends Component {
-  state = {
-    homeList: null,
-    appointmentsList: null,
-    reportsList: null
-  }
 
-  componentDidMount() {
-    axios.get('http://localhost:8080/home')
-      .then(res => {
-        this.setState({
-          homeList: res.data
-        })
-        axios.get('http://localhost:8080/contact')
-          .then(res => {
-            this.setState({
-              conrtactList: res.data
-            })
-          })
-      }
-      )
-  }
-  render() {
-    const { homeList, reportsList, appointmentsList } = this.state;
+
+
 
     return (
       <div className='app'>
@@ -43,6 +23,7 @@ class App extends Component {
              <Route exact path='/pagea' component={PageA} />
              <Route path='/pageb' exact component={PageB} />
              <Route path='/pagee' exact component={PageE} />
+            <Route path='/pagec' component={PageC} />
         </Switch>
         </BrowserRouter>
       </div>

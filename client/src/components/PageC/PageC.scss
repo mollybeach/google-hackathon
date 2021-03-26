@@ -1,0 +1,86 @@
+
+.symptoms {
+    font-family: 'Roboto', sans-serif;
+
+    &__header{
+        margin-left: 15rem;
+        margin-top: 1rem;
+        margin-bottom: -0.3rem;
+        width: 68%;
+    }
+
+    &__main{
+        width: 1010px;
+        height: 600px;
+        margin: 0 auto;
+        border: 0.5px solid #DADBDF;
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+    }
+
+    &__top {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    &__input {
+        background-image: url('../../assets/icons/search-24px.svg');
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: center;
+        width: 250px;
+        height: 40px;
+        border: 1px solid #C4C4C4;
+        border-radius: 8px;
+    }
+
+    &__input[placeholder] {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+
+    &__text {
+        color: #383838;
+        margin-top: 0.6rem;
+    }
+
+    &__image {
+        width: 180px;
+        margin-left: -8rem;
+        
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__links-back {
+        color: #3375E0;
+        margin-left: 8rem;
+        position: relative;
+    }
+
+    &__image-chevron {
+        position: absolute;
+        top: -0.2rem;
+        left: -1.1rem;
+    }
+
+    &__links-next {
+        background-color: #3375E0;
+        padding: 0.8rem 1.5rem;
+        color: white;
+        margin-right: 2rem;
+        border-radius: 8px;
+    }
+
+}
+
