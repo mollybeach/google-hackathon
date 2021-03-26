@@ -5,7 +5,24 @@
         margin-left: 3.2rem;
         margin-bottom: -0.3rem;
     }
+    &__box2{
+        top: 700px;
+        right: 600px;
+        position: absolute;
+    
+   }
+ &__box{
+     top: 1680px;
+     right: 600px;
+     position: absolute;
+ 
+}
+&__box3{
+    top: 200px;
+    right: 600px;
+    position: absolute;
 
+}
     &__info {
         padding-top: 3rem;
         padding-left: 4rem;
@@ -62,7 +79,8 @@ margin: 25px;
 
     &__buttons {
         display: flex;
-        margin-top: 3rem;
+        position: absolute;
+        top: 300px;
         
     }
 
@@ -72,6 +90,7 @@ margin: 25px;
         border: 1px solid #3A88F0;
         color: #3A88F0;
         border-radius: 5px;
+     
     }
 
     &__buttons-2 {
@@ -81,5 +100,6 @@ margin: 25px;
         color: white;
         margin-left: 2rem;
         border-radius: 5px;
+        margin-top: 30px;
     }
 }

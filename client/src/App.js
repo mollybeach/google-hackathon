@@ -14,8 +14,8 @@ import PageE from './components/PageE/PageE';
 
 
 
-
-    return (
+export default function App() {
+  return(
       <div className='app'>
         <BrowserRouter>
           <Header />
@@ -32,8 +32,8 @@ import PageE from './components/PageE/PageE';
         </BrowserRouter>
       </div>
     );
-  }
+  
 }
 
-export default App;
+
 
