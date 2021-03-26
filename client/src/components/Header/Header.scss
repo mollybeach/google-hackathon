@@ -20,24 +20,26 @@
     }
     &__company {
         display: inline;
-        width: 125%;
-       // padding-top: 14px;
-      
         @include d-header;
          color: #5A5A5A;
-         height: 35px;
-         width: 76px;
-        left: 171px;
-        top: 14px;
         border-radius: nullpx;
-
+        position: absolute;
+        width: 76px;
+        height: 35px;
+        left: 151px;
+        top: 14px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 35px;
  
 
        }
     &__logo {
        //margin-left: 5%;
-       width: 20%;
-       padding-top: $increment1-px;
+       width: 100%;
+   
        
       }
   
@@ -46,9 +48,8 @@
       width: 100%;
       max-height: 8.5rem;
       display: flex;
-      //flex-direction: column;
+      flex-direction: column;
       
-      justify-content: space-evenly;
   
       @include tablet {
         flex-direction: row;
@@ -62,6 +63,7 @@
       width: 100%;
       display: flex;
       justify-content: space-evenly;
+      margin-left: 50px;
       list-style: none;
       @include tablet {
         justify-content: flex-end;
@@ -73,15 +75,24 @@
       justify-content: center;
       align-items: center;
       text-decoration: none;
-      width: 10.1875rem;
-      height: 2.25rem;
-      color: #5A5A5A;
+    
       border-radius: 20px;
-      //margin-top:  8px;
-     // background-color: #FFFFFF;
+      margin-top:  8px;
       font-size: 20px;
-      //margin-top: 18px;
-     
+
+      width: 71px;
+      height: 23px;
+      left: 1147px;
+      top: 18px;
+      
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      
+      color: #5A5A5A;
   
       &:hover {
         cursor: pointer;
@@ -92,11 +103,11 @@
   
       &:active {
         //background-color: #FFFFFF;
-        color: grey;
+        color: #3A88F0;
       }
   
       @include tablet {
-        width: 6.6875rem;
+     width: 150px;
       }
       
       &--active {
