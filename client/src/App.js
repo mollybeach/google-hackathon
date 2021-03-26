@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import './App.scss';
 import Home from './components/Home/Home';
+import PageB from './components/PageB/PageB';
 import Contact from "./components/Contact/Contact";
 import PageA from './components/PageA/PageA';
 import Header from './components/Header/Header';
@@ -40,6 +41,7 @@ class App extends Component {
           <Switch>
              <Route exact path='/' component={Home} />
              <Route exact path='/pagea' component={PageA} />
+             <Route path='/pageb' exact component={PageB} />
         </Switch>
         </BrowserRouter>
       </div>
