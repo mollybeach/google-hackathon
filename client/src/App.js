@@ -6,38 +6,38 @@ import Profile from './components/Profile/Profile';
 import Header from './components/Header/Header'
 import PageC from './components/PageC/PageC';
 class App extends Component {
-  state = {
-    homeList: null,
-    contactList: null,
-    profileList: null
-  }
+  // state = {
+  //   homeList: null,
+  //   contactList: null,
+  //   profileList: null
+  // }
 
-  componentDidMount() {
-    axios.get('http://localhost:8080/home')
-      .then(res => {
-        this.setState({
-          homeList: res.data
-        })
-        axios.get('http://localhost:8080/contact')
-          .then(res => {
-            this.setState({
-              conrtactList: res.data
-            })
-          })
-      }
-      )
-  }
+  // componentDidMount() {
+  //   axios.get('http://localhost:8080/home')
+  //     .then(res => {
+  //       this.setState({
+  //         homeList: res.data
+  //       })
+  //       axios.get('http://localhost:8080/contact')
+  //         .then(res => {
+  //           this.setState({
+  //             conrtactList: res.data
+  //           })
+  //         })
+  //     }
+  //     )
+  // }
   render() {
-    const { homeList, profileList, contactList } = this.state;
+    // const { homeList, profileList, contactList } = this.state;
 
     return (
       <div className='app'>
         <BrowserRouter>
           <Header />
           <Switch>
-            <Route exact path={[`/`, `/home`]} render={(props) => <Home homeList={homeList} contactList={contactList} profileList={profileList}{...props} />} />
-            <Route exact path={[`/`, `home/profile`]} render={(props) => <Profile homeList={homeList} contactList={contactList} profileList={profileList}{...props} />} />
-            <Route path='/addsymptoms' component={PageC} />
+            {/* <Route exact path={[`/`, `/home`]} render={(props) => <Home homeList={homeList} contactList={contactList} profileList={profileList}{...props} />} />
+            <Route exact path={[`/`, `home/profile`]} render={(props) => <Profile homeList={homeList} contactList={contactList} profileList={profileList}{...props} />} /> */}
+            <Route path='/pagec' component={PageC} />
           </Switch>
         </BrowserRouter>
       </div>
