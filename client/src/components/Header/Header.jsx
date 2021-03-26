@@ -15,13 +15,13 @@ function Header() {
         </div>
         <ul className="header__nav-list">
           <li>
-            <NavLink to="/home" exact className="header__nav-item" activeClassName="header__nav-item--active">Home</NavLink>
+            <NavLink to="/home" exact className="header__nav-item" activeClassName="header__nav-item--active">Dashboard</NavLink>
           </li>
           <li>
-            <NavLink to="/home/profile" className="header__nav-item" activeClassName="header__nav-item--active">Profile</NavLink>
+            <NavLink to="/home/profile" className="header__nav-item" activeClassName="header__nav-item--active">Appointments</NavLink>
           </li>
           <li>
-            <NavLink to="/survey" className="header__nav-item" activeClassName="header__nav-item--active">Survey</NavLink>
+            <NavLink to="/survey" className="header__nav-item" activeClassName="header__nav-item--active">Reports</NavLink>
           </li>
           <li>
           <img className="header__avi" src={Avi} alt=""></img>
