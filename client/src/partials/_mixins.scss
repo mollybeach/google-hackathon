@@ -1,104 +1,66 @@
-/*************************************TEXT STYLES************************************/
-@use "./colors" as *;
-@use "./breakpoints" as *;
+@use './typography';
 @use "./variables" as *;
 
-@mixin h1-page-heeader {
-	font-family: TitilliumWebSemiBold600;
-	color:  $text-black;
-	font-size: 28px; //28px
-	line-height: 36px; //36px
-	@include tablet {
-        font-size: 32px; //32px
-        line-height: 40px; //40px
-	}
-	@include desktop {
-        font-size: $increment4-px; //32px
-        line-height: $increment5-px; //40px
-	}
+//Breakpoints
+@mixin tablet {
+    @media (min-width: $breakpoint-tablet) {
+        @content;
+    }
 }
 
-@mixin h2-subheader {
-	font-family: TitilliumWebSemiBold600;
-	color: $text-black;
-	font-size: 20px; //20px
-	line-height: 28px; //28px
-	@include tablet {
-        font-size: 24px; //24px
-        line-height: 32px; //28px
-	}
-	@include desktop {
-        font-size: 24px; //24px
-        line-height: 32px; //28px
-	}
+@mixin desktop {
+    @media (min-width: $breakpoint-desktop) {
+        @content;
+    }
 }
-@mixin h3-labels-links-buttons {
-	font-family: TitilliumWebRegular400;
+
+//Text Styles- Desktop
+
+@mixin d-header {
+    font-family: $font-family-bold;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
 	color: $text-black;
-	font-size: 13px; //13px
-	line-height: 20px; //20px
-	@include tablet {
-        font-size: 14px; //14px
-        line-height: 22px; //22px
-	}
-	@include desktop {
-        font-size: 14px; //14px
-        line-height: 22px; //22px
-	}
 }
-@mixin h4-labels-table-header {
-	font-family: TitilliumWebRegular400;
+
+@mixin d-subheader {
+	font-family: $font-family-med;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
 	color: $text-black;
-	font-size: 11px; //11px
-	line-height: 16px; //16px
-	@include tablet {
-        font-size: 12px; //12px
-        line-height: 18px; //18px
-	}
-	@include desktop {
-        font-size: 12px; //12px
-        line-height: 18px; //18px
-	}
 }
-@mixin p1-body-large {
-	font-family: TitilliumWebRegular400;
-	color: $text-black;
-    font-size: 15px; //15px
-    line-height: 26px; //26px
-	@include tablet {
-        font-size: 16px; //12px
-        line-height: 28px; //18px
-	}
-	@include desktop {
-        font-size: 16px; //12px
-        line-height: 28px; //18px
-	}
+
+@mixin d-subheader-grey {
+	font-family: $font-family-med;
+    font-size: 1.75rem;
+    line-height: 2rem;
+	color: $text-grey;
 }
-@mixin p2-body-medium {
-	font-family: TitilliumWebRegular400;
+
+@mixin d-paragraph-bold {
+	font-family: $font-family-bold;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
 	color: $text-black;
-	font-size: 16px; //13px
-	line-height: 28px; //20px
-	@include tablet {
-        font-size: 13px; //13px
-        line-height: 20px; //20px
-	}
-	@include desktop {
-        font-size: 13px; //13px
-        line-height: 20px; //20px
-	}
 }
-@mixin p2-body-small {
-	font-family: TitilliumWebRegular400;
-	color: $text-black;
-	font-size: 11px; //13px
-	line-height: 16px; //20px
-	@include tablet {
-        font-size: 12px; //13px
-        line-height: 18px; //20px
-	}
-	@include desktop {
-        font-size: 12px; //13px
-        line-height: 18px; //20px
-	}
+
+@mixin d-paragraph-large {
+	font-family: $font-family-reg;
+    font-size: 1.375rem;
+    line-height: 1.25rem;
+	color: $text-grey;
+}
+
+@mixin d-paragraph-medium {
+	font-family: $font-family-reg;
+    font-size: 1.25rem;
+    line-height: 1.15rem;
+	color: $text-grey;
+}
+
+@mixin d-paragraph-small {
+	font-family: $font-family-reg;
+    font-size: 1rem;
+    line-height: 1rem;
+	color: $text-grey;
 }
