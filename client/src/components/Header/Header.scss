@@ -7,9 +7,6 @@
 
 .header{
     width: 100%;
-    @include h2-subheader;
     height: 2vw;
     padding-left: 10%;
-    padding-top: $increment5-px;
-    background: $slate;
 }
