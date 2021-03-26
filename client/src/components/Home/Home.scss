@@ -7,4 +7,8 @@
 
 .home{
     background-color: white;
+    @include h1-page-heeader;
+    align-content: center;
+    margin-left: 40%;
+    padding-top: 2%;
 }

@@ -7,4 +7,5 @@
 
 .email{
     width: 100%;
+    @include h4-labels-table-header;
 }
