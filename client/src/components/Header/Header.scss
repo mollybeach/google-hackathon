@@ -129,13 +129,13 @@
 	    	background-repeat: no-repeat;
 	    	background-size: $increment20px-rem;
 	    	background-position-y: center;
-		background-position-x: $increment2-rem;
-		padding-left: $increment5-rem;
-		border-radius: $increment0-rem;
-		border: solid 1px #C4C4C4;
-		background-color: white;
-		width: 391px; //252-40= 212/320=66.25vw
-		height:44px;
+		    background-position-x: $increment2-rem;
+	    	padding-left: $increment5-rem;
+		    border-radius: $increment0-rem;
+		    border: solid 1px #C4C4C4;
+		    background-color: white;
+		    width: 391px; //252-40= 212/320=66.25vw
+		   height:44px;
      
 		justify-content: right;
 		&:active {
