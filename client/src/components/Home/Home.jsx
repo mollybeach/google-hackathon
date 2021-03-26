@@ -1,6 +1,10 @@
 import React from 'react';
 import './Home.scss';
 import Graphic from '../../assets/images/homepage_graphic.png';
+import GraphicTwo from '../../assets/images/dashboard-doctor.PNG';
+import GraphicThree from '../../assets/images/dashboard-chart.PNG';
+import GraphicFour from '../../assets/images/dashboard-graph.PNG';
+
 import { Link } from 'react-router-dom';
 
 
@@ -28,9 +32,17 @@ const Home = () => {
                             <Link to='/pagea'><button className="main__button">Start checkup</button></Link>
                         </div>
                     </article>
-                    <article className='main__article-two'></article>
-                    <article className='main__article-three'></article>
-                    <article className='main__article-four'></article>
+                    <article className='main__article-two'>
+                        <img className="main__graphic-two" src={GraphicTwo} alt=""/>
+                        <button className="main__button-two">Book appointment</button>
+                    </article>
+                    <article className='main__article-three'>
+                        <img className="main__graphic-three" src={GraphicThree} alt=""/>
+                        <button className="main__button">View Reports</button>
+                    </article>
+                    <article className='main__article-four'>
+                        <img className="main__graphic-four" src={GraphicFour} alt=""/>
+                    </article>
                 </div>
             </div>
         </section>
