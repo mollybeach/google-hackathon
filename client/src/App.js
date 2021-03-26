@@ -12,8 +12,8 @@ import Header from './components/Header/Header';
 class App extends Component {
   state = {
     homeList: null,
-    contactList: null,
-    profileList: null
+    appointmentsList: null,
+    reportsList: null
   }
 
   componentDidMount() {
@@ -32,7 +32,7 @@ class App extends Component {
       )
   }
   render() {
-    const { homeList, profileList, contactList } = this.state;
+    const { homeList, reportsList, appointmentsList } = this.state;
 
     return (
       <div className='app'>
@@ -55,6 +55,6 @@ export default App;
 /*     if(homeList===null ) {
       return <p className = "Home__loading">Loading...</p>
     }
-    if( contactList===null ) {
-      return <p className = "Contact__loading">Loading...</p>
+    if( appointmentsList===null ) {
+      return <p className = "appointments__loading">Loading...</p>
     }*/

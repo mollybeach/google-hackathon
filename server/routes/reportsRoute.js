@@ -5,13 +5,13 @@ const fs = require("fs");
 
 
 
-router.get("/home/profile", (req, res) => {
+router.get("/home/reports", (req, res) => {
         res.status(200).json(dataList);
   });
 
 
-  router.get("/home/profile/:profileId", (req, res) => {
-    let targethomeId = req.params.profileId;
+  router.get("/home/reports/:reportsId", (req, res) => {
+    let targethomeId = req.params.reportsId;
     let home = homeList.find(item => {
     return targethomeId === item.id;
     });
