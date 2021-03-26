@@ -1,13 +1,11 @@
 
 @use '../../partials/variables' as *;
-@use '../../partials/breakpoints' as*;
-@use '../../partials/colors' as *;
 @use '../../partials/mixins' as *;
 @use '../../partials/typography' as *;
 
 .header {
     display: flex;
-    background-color: $slate;
+    background-color: $primary-background;
     max-height: 12.5rem;
     @include tablet {
       max-height: 11.625rem;
@@ -15,10 +13,7 @@
       padding: 0 0rem;
      // justify-content: center;
     }
-    * {
-        border: 0.01px dashed red;
-        width:auto;
-     }
+
     @include desktop {
       padding: 0 5rem;
     }
@@ -26,8 +21,8 @@
         display: inline;
         width: 125%;
         padding-top: $increment4-px;
-        @include h2-subheader;
-        color: $white;
+        @include d-header;
+ 
 
        }
     &__logo {
@@ -78,14 +73,14 @@
   
       &:hover {
         cursor: pointer;
-        color: $white;
+        color: grey;
         text-decoration: none;
         transform: scale(1.04);
       }
   
       &:active {
         background-color: #13182C;
-        color: white;
+        color: grey;
       }
   
       @include tablet {
@@ -94,7 +89,7 @@
       
       &--active {
         background-color: #13182C;
-        color: white;
+        color: grey;
       }
     }
     &__search-input {
@@ -106,17 +101,17 @@
 		padding-left: $increment5-rem;
 		height: $increment5-rem;
 		border-radius: $increment0-rem;
-		border: solid 1px $mercury;
-		background-color: $alabaster;
+		border: solid 1px grey;
+		background-color: grey;
 		width: 66.25vw; //252-40= 212/320=66.25vw
 		height: $increment6-rem;
      
 		justify-content: right;
 		&:active {
-			border-color: $brainflix-blue;
+			border-color: blue;
 		}
 		&:hover {
-			border-color: $brainflix-blue;
+			border-color:blue;
 		}
 		@include tablet{
             margin-top: 5%;
