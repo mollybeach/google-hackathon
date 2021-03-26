@@ -1,0 +1,107 @@
+@import '../../partials/mixins';
+@import '../../partials/resets';
+@import '../../partials/variables';
+
+.agreement {
+    
+    &__capture {
+        width: 970px;
+        margin: 2rem 0;
+    }
+
+    &__info {
+        padding: 80px 120px;
+        margin: 0 auto;
+        width: 1200px;
+        height: 650px;
+        border: 0.5px solid #DADBDF;
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+    }
+
+    &__text-header {
+        @include d-subheader;
+        color: #5A5A5A;
+        font-size: 28px;
+        margin-bottom: 1rem;
+    }
+
+    &__text-sub {
+        @include d-subheader;
+        color: #5A5A5A;
+        font-size: 25px;
+        margin-top: 1.5rem;
+    }
+
+    &__text-sm {
+        @include d-paragraph-small;
+        color: #5A5A5A;
+        margin-top: .6rem;
+    }
+
+    &__text-privacy {
+        @include d-paragraph-small;
+        color: #5A5A5A;
+        margin-top: 4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__rules {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 2rem;
+    }
+
+    &__conditions {
+        margin-left: 1rem;
+    }
+
+    &__link {
+        @include d-paragraph-small;
+        color: #3A88F0;
+        text-decoration: none;
+        margin-top: 1rem;
+    }
+
+    &__buttons {
+        @include d-paragraph-small;
+        display: flex;
+        margin-top: 3rem;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__buttons-1 {
+        text-decoration: none;
+        padding: 0.7rem 2rem;
+        border: 1px solid #3A88F0;
+        color: #3A88F0;
+        border-radius: 5px;
+        min-width: 223px;
+        min-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__buttons-2 {
+        text-decoration: none;
+        padding: 0.7rem 3.1rem;
+        background-color: #3A88F0;
+        color: white;
+        margin-left: 2rem;
+        border-radius: 5px;
+        width: 223px;
+        min-height: 50px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

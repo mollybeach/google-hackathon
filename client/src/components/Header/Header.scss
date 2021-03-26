@@ -8,9 +8,10 @@
     background-color: $primary-background;
     max-height: 12.5rem;
     @include tablet {
-      max-height: 11.625rem;
+      height: 60px;
       flex-direction: row;
       padding: 0 0rem;
+      border: 0.75px #D5D7DB solid;
      // justify-content: center;
     }
 
@@ -18,26 +19,42 @@
       padding: 0 5rem;
     }
     &__company {
+    
         display: inline;
-        width: 125%;
-        padding-top: $increment4-px;
         @include d-header;
- 
+         color: #5A5A5A;
+        border-radius: nullpx;
+        position: absolute;
+        width: 76px;
+        height: 35px;
+        left: 75px;
+        top: 14px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 35px;
+        @include desktop{  
+          left: 151px;
+        }
 
        }
     &__logo {
-       margin-left: 50%;
-       width: 20%;
-       padding-top: $increment1-px;
+      margin-left: 24px;
+       @include desktop{
+         margin-left: none;
+        width: 300%;
+        }
+       
       }
   
     &__nav {
+      margin-top: 8px;
       width: 100%;
       max-height: 8.5rem;
       display: flex;
-      //flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
+      flex-direction: column;
+      
   
       @include tablet {
         flex-direction: row;
@@ -51,6 +68,7 @@
       width: 100%;
       display: flex;
       justify-content: space-evenly;
+      margin-left: 50px;
       list-style: none;
       @include tablet {
         justify-content: flex-end;
@@ -62,49 +80,62 @@
       justify-content: center;
       align-items: center;
       text-decoration: none;
-      width: 10.1875rem;
-      height: 2.25rem;
-      color: #BDC5D5;
+    
       border-radius: 20px;
-      background-color: #232940;
-      font-size: 0.8125rem;
-      margin: $increment2-px;
-     
+      margin-top:  8px;
+      font-size: 20px;
+
+      width: 71px;
+      height: 23px;
+      left: 1147px;
+      top: 18px;
+      
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      
+      color: #5A5A5A;
   
       &:hover {
         cursor: pointer;
-        color: grey;
+        color: #3A88F0;
         text-decoration: none;
         transform: scale(1.04);
       }
   
       &:active {
-        background-color: #13182C;
-        color: grey;
+        //background-color: #FFFFFF;
+        color: #3A88F0;
       }
   
       @include tablet {
-        width: 6.6875rem;
+     width: 150px;
       }
       
       &--active {
-        background-color: #13182C;
-        color: grey;
+        //background-color: #13182C;
+        color: #3A88F0;
       }
     }
     &__search-input {
-		background-image: url("../../assets/logos//loupe.png");
-		background-repeat: no-repeat;
-		background-size: $increment20px-rem;
-		background-position-y: center;
-		background-position-x: $increment2-rem;
-		padding-left: $increment5-rem;
-		height: $increment5-rem;
-		border-radius: $increment0-rem;
-		border: solid 1px grey;
-		background-color: grey;
-		width: 66.25vw; //252-40= 212/320=66.25vw
-		height: $increment6-rem;
+      //display: none;
+      @include desktop{
+        display:contents;
+        width: 300px;
+	    	background-image: url("../../assets/logos//loupe.png");
+	    	background-repeat: no-repeat;
+	    	background-size: $increment20px-rem;
+	    	background-position-y: center;
+		    background-position-x: $increment2-rem;
+	    	padding-left: $increment5-rem;
+		    border-radius: $increment0-rem;
+		    border: solid 1px #C4C4C4;
+		    background-color: white;
+		    width: 391px; //252-40= 212/320=66.25vw
+		   height:44px;
      
 		justify-content: right;
 		&:active {
@@ -113,12 +144,16 @@
 		&:hover {
 			border-color:blue;
 		}
-		@include tablet{
-            margin-top: 5%;
-			width: 300px;
-           // width: 25%;
-			
-		}
-	
+  }
 	}
+  &__avi {
+    width:  40px;
+    height:  40px;
+    border-radius: 33.3px; //circle
+    margin-right: $increment2-px;
+    position: relative;
+    @include tablet {
+        margin-top: $increment2-px 1.3vw 0 0;
+    }
+}
   }
