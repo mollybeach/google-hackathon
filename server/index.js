@@ -2,15 +2,23 @@ const express = require('express');
 const app = express();
 const PORT = 8080;
 const cors = require("cors");
-const contactRoute = require("./routes/contactRoute");
 const homeRoute = require("./routes/homeRoute");
+const profileoute = require("./routes/profileRoute");
+const homeRoute = require("./routes/surveyRoute");
+const contactRoute = require("./routes/contactRoute");
+
 
 
 app.use(cors());
 app.use(express.json());
 
-app.use("/", contactRoute);
+
 app.use("/", homeRoute);
+app.use("/", profileRoute);
+app.use("/", contactRoute);
+app.use("/", surveyRoute);
+
+
 
 
 
