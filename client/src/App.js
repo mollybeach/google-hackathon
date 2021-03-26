@@ -10,6 +10,8 @@ import Header from './components/Header/Header'
 import PageC from './components/PageC/PageC';
 import PageB from './components/PageB/PageB';
 import PageA from './components/PageA/PageA';
+import PageE from './components/PageE/PageE';
+
 
 
 
@@ -24,6 +26,7 @@ import PageA from './components/PageA/PageA';
              <Route exact path='/' component={Home} />
              <Route exact path='/pagea' component={PageA} />
              <Route path='/pageb' exact component={PageB} />
+             <Route path='/pagee' exact component={PageE} />
             <Route path='/pagec' component={PageC} />
         </Switch>
         </BrowserRouter>
