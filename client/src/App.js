@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import axios from 'axios';
 import Home from './components/Home/Home';
 import PageB from './components/PageB/PageB';
+import Header from './components/Header/Header'
 
 class App extends Component {
   state = {
@@ -32,9 +33,9 @@ axios.get('http://localhost:8080/home')
     return (
       <div className = 'app'>
         <BrowserRouter>
+        <Header/>
         <Switch>
           <Route path='/' exact component={Home} />
-          
           <Route path='/pageb' exact component={PageB} />
         </Switch>
         </BrowserRouter>
