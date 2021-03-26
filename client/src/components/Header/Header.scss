@@ -1,15 +1,124 @@
 
 @use '../../partials/variables' as *;
-@use '../../partials/breakpoints' as*;
-@use '../../partials/colors' as *;
 @use '../../partials/mixins' as *;
 @use '../../partials/typography' as *;
 
-.header{
-    width: 100%;
-    @include h2-subheader;
-    height: 2vw;
-    padding-left: 10%;
-    padding-top: $increment5-px;
-    background: $slate;
-}
+.header {
+    display: flex;
+    background-color: $primary-background;
+    max-height: 12.5rem;
+    @include tablet {
+      max-height: 11.625rem;
+      flex-direction: row;
+      padding: 0 0rem;
+     // justify-content: center;
+    }
+
+    @include desktop {
+      padding: 0 5rem;
+    }
+    &__company {
+        display: inline;
+        width: 125%;
+        padding-top: $increment4-px;
+        @include d-header;
+ 
+
+       }
+    &__logo {
+       margin-left: 50%;
+       width: 20%;
+       padding-top: $increment1-px;
+      }
+  
+    &__nav {
+      width: 100%;
+      max-height: 8.5rem;
+      display: flex;
+      //flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+  
+      @include tablet {
+        flex-direction: row;
+        height: 5.75rem;
+      
+        
+      }
+    }
+  
+    &__nav-list {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+      @include tablet {
+        justify-content: flex-end;
+      }
+    }
+  
+    &__nav-item {
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 10.1875rem;
+      height: 2.25rem;
+      color: #BDC5D5;
+      border-radius: 20px;
+      background-color: #232940;
+      font-size: 0.8125rem;
+      margin: $increment2-px;
+     
+  
+      &:hover {
+        cursor: pointer;
+        color: grey;
+        text-decoration: none;
+        transform: scale(1.04);
+      }
+  
+      &:active {
+        background-color: #13182C;
+        color: grey;
+      }
+  
+      @include tablet {
+        width: 6.6875rem;
+      }
+      
+      &--active {
+        background-color: #13182C;
+        color: grey;
+      }
+    }
+    &__search-input {
+		background-image: url("../../assets/logos//loupe.png");
+		background-repeat: no-repeat;
+		background-size: $increment20px-rem;
+		background-position-y: center;
+		background-position-x: $increment2-rem;
+		padding-left: $increment5-rem;
+		height: $increment5-rem;
+		border-radius: $increment0-rem;
+		border: solid 1px grey;
+		background-color: grey;
+		width: 66.25vw; //252-40= 212/320=66.25vw
+		height: $increment6-rem;
+     
+		justify-content: right;
+		&:active {
+			border-color: blue;
+		}
+		&:hover {
+			border-color:blue;
+		}
+		@include tablet{
+            margin-top: 5%;
+			width: 300px;
+           // width: 25%;
+			
+		}
+	
+	}
+  }

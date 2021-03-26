@@ -1,14 +1,92 @@
+@import '../../partials/mixins';
+@import '../../partials/resets';
+@import '../../partials/variables';
 
-@use '../../partials/variables' as * ;
-@use '../../partials/colors' as * ;
-@use '../../partials/breakpoints' as * ;
-@use '../../partials/typography' as * ;
-@use '../../partials/mixins' as * ;
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: $primary-background;
 
-.home{
-    background-color: white;
-    @include h1-page-heeader;
-    align-content: center;
-    margin-left: 40%;
-    padding-top: 2%;
+    &__component {
+        padding: 5rem 4rem;
+    }
+
+    &__header {
+        @include d-header;
+        margin-bottom: 2rem;
+        padding-left: 1rem;
+    }
+
+    &__symptom-checker {
+        @include component-styling;
+        background-color: $primary-div-background-ltblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        min-height: 19.875rem;
+        width: 65%;
+    }
+
+    &__subheader {
+        @include d-subheader-grey;
+        font-size: 25px;
+        margin-bottom: 1.875rem;
+    }
+
+    &__paragraph {
+        @include d-paragraph-medium;
+        padding-bottom: 1.5rem;
+    }
+
+    &__graphic {
+        width: 211px;
+        height: 149px;
+        margin-bottom: 3rem;
+    }
+
+    &__button {
+        @include button-blue;
+        @include d-paragraph-small;
+        width: 183px;
+        color: white;
+        font-size: 20px; 
+        
+    }
+
+    &__symptom-checker-left {
+        width: 50%;
+    }
+
+    &__symptom-checker-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__dashboard {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__article-two {
+        @include component-styling;
+        width: 30%;
+    }
+
+    &__article-three {
+        @include component-styling;
+        width: 48%;
+        height: 16.25rem;
+        margin-top: 1.5rem;
+        margin-right: .5rem;
+    }
+
+    &__article-four {
+        @include component-styling;
+        width: 48%;
+        margin-top: 1.5rem;
+    }
 }
+
+

@@ -1,7 +1,4 @@
-
 @use '../../partials/variables' as *;
-@use '../../partials/breakpoints' as*;
-@use '../../partials/colors' as *;
 @use '../../partials/mixins' as *;
 @use '../../partials/typography' as *;
 
@@ -11,6 +8,4 @@
     margin-top: 35vw;
     padding-left: 10%;
     padding-top: 2%;
-    color: $black;
-    background: $cloud;
 }

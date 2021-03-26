@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import axios from 'axios';
+
 import './App.scss';
 import Home from './components/Home/Home';
-import Profile from './components/Profile/Profile';
-import Header from "./components/Header/Header";
 import Contact from "./components/Contact/Contact";
 import PageA from './components/PageA/PageA';
-import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
 
 class App extends Component {
   state = {
@@ -39,12 +38,9 @@ class App extends Component {
         <BrowserRouter>
           <Header />
           <Switch>
-            <Route exact path={[`/`, `/home`]} render={(props) => <Home homeList={homeList} contactList={contactList} profileList={profileList}{...props} />} />
-            <Route exact path={[`/`, `home/profile`]} render={(props) => <Profile homeList={homeList} contactList={contactList} profileList={profileList}{...props} />} />
-            <Route exact path='/contact' render={(props) => <Contact homeList={homeList} contactList={contactList} {...props} />} />
-            <Route path='/agreement' component={PageA} />
-          </Switch>
-          <Footer />
+             <Route exact path='/' component={Home} />
+             <Route exact path='/pagea' component={PageA} />
+        </Switch>
         </BrowserRouter>
       </div>
     );
