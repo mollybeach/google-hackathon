@@ -10,6 +10,6 @@
     @include h2-subheader;
     height: 2vw;
     padding-left: 10%;
-    padding-top: 1%;
+    padding-top: $increment5-px;
     background: $slate;
 }

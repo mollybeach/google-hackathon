@@ -13,8 +13,8 @@
         line-height: 40px; //40px
 	}
 	@include desktop {
-        font-size: 32px; //32px
-        line-height: 40px; //40px
+        font-size: $increment4-px; //32px
+        line-height: $increment5-px; //40px
 	}
 }
 
@@ -90,7 +90,7 @@
 }
 @mixin p2-body-small {
 	font-family: TitilliumWebRegular400;
-	color: $instock-black;
+	color: $black;
 	font-size: 11px; //13px
 	line-height: 16px; //20px
 	@include tablet {
