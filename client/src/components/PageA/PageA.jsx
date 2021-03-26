@@ -33,7 +33,7 @@ const Agreement = () => {
 
                 <div className='agreement__buttons'>
                     <a className='agreement__buttons-1' href='/'>I don't agree</a>
-                    <Link path='/pageb'><a className='agreement__buttons-2'>I agree</a></Link>
+                    <Link to='/pageb'><a className='agreement__buttons-2'>I agree</a></Link>
                 </div>
             </div>
         </section>
