@@ -19,6 +19,7 @@
       padding: 0 5rem;
     }
     &__company {
+    
         display: inline;
         @include d-header;
          color: #5A5A5A;
@@ -26,20 +27,24 @@
         position: absolute;
         width: 76px;
         height: 35px;
-        left: 151px;
+        left: 75px;
         top: 14px;
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
         font-size: 30px;
         line-height: 35px;
- 
+        @include desktop{  
+          left: 151px;
+        }
 
        }
     &__logo {
-       //margin-left: 5%;
-       width: 100%;
-   
+      margin-left: 24px;
+       @include desktop{
+         margin-left: none;
+        width: 300%;
+        }
        
       }
   
@@ -116,10 +121,14 @@
       }
     }
     &__search-input {
-		background-image: url("../../assets/logos//loupe.png");
-		background-repeat: no-repeat;
-		background-size: $increment20px-rem;
-		background-position-y: center;
+      //display: none;
+      @include desktop{
+        display:contents;
+        width: 300px;
+	    	background-image: url("../../assets/logos//loupe.png");
+	    	background-repeat: no-repeat;
+	    	background-size: $increment20px-rem;
+	    	background-position-y: center;
 		background-position-x: $increment2-rem;
 		padding-left: $increment5-rem;
 		border-radius: $increment0-rem;
@@ -135,13 +144,7 @@
 		&:hover {
 			border-color:blue;
 		}
-		@include tablet{
-           // margin-top: 5%;
-			width: 300px;
-           // width: 25%;
-			
-		}
-	
+  }
 	}
   &__avi {
     width:  40px;
