@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Home.scss';
 import Graphic from '../../assets/images/homepage_graphic.png';
 
