@@ -5,7 +5,6 @@ import axios from 'axios';
 import './App.scss';
 import Home from './components/Home/Home';
 import PageB from './components/PageB/PageB';
-
 import PageA from './components/PageA/PageA';
 import Header from './components/Header/Header';
 

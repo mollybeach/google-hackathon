@@ -14,7 +14,7 @@
     &__header {
         @include d-header;
         margin-bottom: 2rem;
-        padding-left: 1rem;
+        padding-left: 11rem;
     }
 
     &__symptom-checker {
@@ -23,8 +23,9 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        min-height: 19.875rem;
-        width: 65%;
+        height: 387px;
+        width: 793px;
+        margin-right: 1rem;
     }
 
     &__subheader {
@@ -66,26 +67,63 @@
     &__dashboard {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     &__article-two {
         @include component-styling;
-        width: 30%;
+        width: 387px;
+        height: 387px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
     }
 
     &__article-three {
         @include component-styling;
-        width: 48%;
-        height: 16.25rem;
+        width: 590px;
+        height: 260px;
         margin-top: 1.5rem;
-        margin-right: .5rem;
+        margin-right: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 2rem;
     }
 
     &__article-four {
         @include component-styling;
-        width: 48%;
+        height: 260px;
+        width: 590px;
         margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__graphic-two {
+        height: 266px;
+        width: 387px;
+        margin-bottom: 1rem;
+    }
+
+    &__button-two {
+        @include button-blue;
+        @include d-paragraph-small;
+        width: 183px;
+        color: white;
+        font-size: 20px;
+        width: 225px;
+    }
+
+    &__graphic-three {
+        height: 200px;
+    }
+
+    &__graphic-four {
+        height: 177px;
+        width: 395px;
     }
 }
 
