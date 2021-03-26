@@ -6,6 +6,7 @@ import './App.scss';
 import Home from './components/Home/Home';
 import PageB from './components/PageB/PageB';
 import PageA from './components/PageA/PageA';
+import PageE from './components/PageE/PageE';
 import Header from './components/Header/Header';
 
 class App extends Component {
@@ -41,6 +42,7 @@ class App extends Component {
              <Route exact path='/' component={Home} />
              <Route exact path='/pagea' component={PageA} />
              <Route path='/pageb' exact component={PageB} />
+             <Route path='/pagee' exact component={PageE} />
         </Switch>
         </BrowserRouter>
       </div>
