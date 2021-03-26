@@ -21,7 +21,7 @@ function Header() {
         </div>
         <ul className="header__nav-list">
           <li>
-            <NavLink to="/home" exact className="header__nav-item" activeClassName="header__nav-item--active">Dashboard</NavLink>
+            <NavLink to="/" exact className="header__nav-item" activeClassName="header__nav-item--active">Dashboard</NavLink>
           </li>
           <li>
             <NavLink to="/home/profile" className="header__nav-item" activeClassName="header__nav-item--active">Appointments</NavLink>

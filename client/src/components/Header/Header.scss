@@ -48,9 +48,8 @@
       width: 100%;
       max-height: 8.5rem;
       display: flex;
-      //flex-direction: column;
+      flex-direction: column;
       
-      justify-content: space-evenly;
   
       @include tablet {
         flex-direction: row;
@@ -108,7 +107,7 @@
       }
   
       @include tablet {
-        width: 6.6875rem;
+     width: 150px;
       }
       
       &--active {
