@@ -3,8 +3,8 @@ const app = express();
 const PORT = 8080;
 const cors = require("cors");
 const homeRoute = require("./routes/homeRoute");
-const profileoute = require("./routes/profileRoute");
-const homeRoute = require("./routes/surveyRoute");
+const profileRoute = require("./routes/profileRoute");
+const surveyRoute = require("./routes/surveyRoute");
 const contactRoute = require("./routes/contactRoute");
 
 

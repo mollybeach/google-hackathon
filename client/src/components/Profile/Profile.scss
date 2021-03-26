@@ -5,10 +5,11 @@
 @use '../../partials/typography' as * ;
 @use '../../partials/mixins' as * ;
 
-.home{
-    background-color: white;
-    @include h1-page-heeader;
+.profile{
+    background-color: $white;
+    @include h2-subheader;
     align-content: center;
     margin-left: 40%;
     padding-top: 2%;
+    color: $white;
 }

@@ -8,7 +8,25 @@
 .home{
     background-color: white;
     @include h1-page-heeader;
+    font-weight: bold;
     align-content: center;
-    margin-left: 40%;
+    margin-left: $increment15-px;
     padding-top: 2%;
+    * {
+        border: 0.01px dashed red;
+        width:auto;
+     }
+    &__info{
+        width: 40%;
+        @include h2-subheader;
+        color: $slate;
+    }
+    &__hero{
+        margin-left: 25%;
+        margin-right: 25%;
+        background-image: url('../../assets/logos/vaccination.jpg');
+        width: 25vw;
+        height: 25vw;
+        background-repeat:no-repeat;
+    }
 }
