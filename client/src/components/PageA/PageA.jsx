@@ -3,6 +3,7 @@ import Page from '../../assets/icons/page.svg';
 import Shield from '../../assets/icons/shield.svg';
 import Capture1 from '../../assets/icons/Capture 1.PNG';
 import './PageA.scss';
+import { Link } from 'react-router-dom';
 
 const Agreement = () => {
     return (
@@ -32,7 +33,7 @@ const Agreement = () => {
 
                 <div className='agreement__buttons'>
                     <a className='agreement__buttons-1' href='/'>I don't agree</a>
-                    <a className='agreement__buttons-2' href='/'>I agree</a>
+                    <Link path='/pageb'><a className='agreement__buttons-2' href='/'>I agree</a></Link>
                 </div>
             </div>
         </section>

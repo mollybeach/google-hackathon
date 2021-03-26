@@ -1,0 +1,39 @@
+@import '../../partials/mixins';
+@import '../../partials/resets';
+@import '../../partials/variables';
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: $primary-background;
+    padding-top: 5rem;
+
+    &__component {
+        background-color: $primary-div-background-white;
+        width: 1200px;
+        height: 650px;
+        @include component-styling;
+
+    }
+}
+
+//     &__component {
+//         padding: 5rem 4rem;
+//     }
+
+//     &__header {
+//         @include d-header;
+//         margin-bottom: 2rem;
+//         padding-left: 1rem;
+//     }
+
+//     &__symptom-checker {
+//         @include component-styling;
+//         background-color: $primary-div-background-ltblue;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: flex-start;
+//         min-height: 19.875rem;
+//         width: 65%;
+//     }
+// }
