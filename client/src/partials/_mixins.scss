@@ -50,7 +50,7 @@
 @mixin d-paragraph-large {
 	font-family: $font-family;
     font-size: 1.375rem;
-    line-height: 1.25rem;
+    line-height: 1.4rem;
 	color: $text-grey;
     font-weight: 400;
 }
@@ -58,14 +58,14 @@
 @mixin d-paragraph-medium {
 	font-family: $font-family;
     font-size: 1.25rem;
-    line-height: 1.15rem;
+    line-height: 1.4rem;
 	color: $text-grey;
     font-weight: 400;
 }
 
 @mixin d-paragraph-small {
 	font-family: $font-family;
-    font-size: 1rem;
+    font-size: 1.4rem;
     line-height: 1rem;
 	color: $text-grey;
     font-weight: 400;
@@ -84,7 +84,7 @@
 //Component Styling
 
 @mixin component-styling {
-    box-shadow: 0px 2px 5px rgba(19, 24, 44, 0.1);
+    box-shadow: 0px 10px 25px rgba(19, 24, 44, 0.1);
     border-radius: 10px;
     padding: 3.75rem;
 }
