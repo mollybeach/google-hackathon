@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import axios from 'axios';
-import './App.css';
 import Home from './components/Home/Home';
 import Profile from './components/Profile/Profile';
-import Header from "./components/Header/Header";
-import Contact from "./components/Contact/Contact";
-import Footer from './components/Footer/Footer';
 
 class App extends Component {
   state = {
@@ -36,13 +32,10 @@ axios.get('http://localhost:8080/home')
     return (
       <div className = 'app'>
         <BrowserRouter>
-        <Header />
         <Switch>
           <Route exact path={[`/`, `/home`]} render = {(props)=> <Home homeList = {homeList} contactList={contactList} profileList = {profileList}{...props} />} />
           <Route exact path={[`/`, `home/profile`]} render = {(props)=> <Profile homeList = {homeList} contactList={contactList} profileList = {profileList}{...props} />} />
-            <Route exact path = '/contact'    render = {(props)=> <Contact homeList = {homeList}  contactList={contactList} {...props} />} />
         </Switch>
-        <Footer/>
         </BrowserRouter>
       </div>
     );
