@@ -5,7 +5,7 @@
 
 @mixin h1-page-heeader {
 	font-family: TitilliumWebSemiBold600;
-	color:  $instock-black;
+	color:  $black;
 	font-size: 28px; //28px
 	line-height: 36px; //36px
 	@include tablet {
@@ -13,14 +13,14 @@
         line-height: 40px; //40px
 	}
 	@include desktop {
-        font-size: $increment-4px; //32px
-        line-height: $increment-5px; //40px
+        font-size: 32px; //32px
+        line-height: 40px; //40px
 	}
 }
 
 @mixin h2-subheader {
 	font-family: TitilliumWebSemiBold600;
-	color: $instock-black;
+	color: $black;
 	font-size: 20px; //20px
 	line-height: 28px; //28px
 	@include tablet {
@@ -34,7 +34,7 @@
 }
 @mixin h3-labels-links-buttons {
 	font-family: TitilliumWebRegular400;
-	color: $instock-black;
+	color: $black;
 	font-size: 13px; //13px
 	line-height: 20px; //20px
 	@include tablet {
@@ -48,7 +48,7 @@
 }
 @mixin h4-labels-table-header {
 	font-family: TitilliumWebRegular400;
-	color: $instock-black;
+	color: $black;
 	font-size: 11px; //11px
 	line-height: 16px; //16px
 	@include tablet {
@@ -62,7 +62,7 @@
 }
 @mixin p1-body-large {
 	font-family: TitilliumWebRegular400;
-	color: $instock-black;
+	color: $black;
     font-size: 15px; //15px
     line-height: 26px; //26px
 	@include tablet {
@@ -76,7 +76,7 @@
 }
 @mixin p2-body-medium {
 	font-family: TitilliumWebRegular400;
-	color: $instock-black;
+	color: $black;
 	font-size: 16px; //13px
 	line-height: 28px; //20px
 	@include tablet {
