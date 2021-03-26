@@ -38,10 +38,10 @@ class App extends Component {
       <div className='app'>
         <BrowserRouter>
           <Header />
-        <Switch>        
-            <Route exact path='/' component={Home} />
-            <Route exact path='/pagea' component={PageA} />
-            <Route path='/pageb' exact component={PageB} />
+          <Switch>
+             <Route exact path='/' component={Home} />
+             <Route exact path='/pagea' component={PageA} />
+             <Route path='/pageb' exact component={PageB} />
         </Switch>
         </BrowserRouter>
       </div>
