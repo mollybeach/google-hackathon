@@ -3,21 +3,25 @@
 @import '../../partials/variables';
 
 .mainb {
+
+    &__img {
     width: 100%;
     height: 100vh;
-    background-color: $primary-background;
-    padding-top: 5rem;
-
-    &__component-pageb {
-        background-color: $primary-div-background-white;
-        max-width: 1200px;
-        max-height: 650px;
-        @include component-styling;
     
-    
-
     }
 }
+
+    // &__component-pageb {
+    //     background-color: white;
+    //     max-width: 1200px;
+    //     max-height: 650px;
+    //     @include component-styling;
+    // }
+
+    // &__button-b-grey {
+    //     background-color: $secondary-color-grey;
+    //     color: $text-grey;
+  
 
 //     &__component {
 //         padding: 5rem 4rem;
