@@ -1,0 +1,12 @@
+
+@use '../../partials/variables' as *;
+@use '../../partials/breakpoints' as*;
+@use '../../partials/colors' as *;
+@use '../../partials/mixins' as *;
+@use '../../partials/typography' as *;
+
+.footer{
+    width: 100%;
+    height: 20%;
+    background:green;
+}

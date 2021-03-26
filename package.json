@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Google Brainstation Hackathon Day",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mollybeach/brainstation-hackathon.git"
+  },
+  "author": "Kathleen Gladstone, Molly Beach, Farzana Shampa David Arnold, Divya Nagpal, Lisa Villary, Nataliya Parshyna, Yonge Au, Sam Chaaya, Kea Leagard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mollybeach/brainstation-hackathon/issues"
+  },
+  "homepage": "https://github.com/mollybeach/brainstation-hackathon#readme",
+  "dependencies": {
+    "awesome-phonenumber": "^2.47.0",
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "google-libphonenumber": "^3.2.18",
+    "nodemon": "^2.0.7",
+    "react-dom": "^17.0.2",
+    "uuidv4": "^6.2.6",
+    "web-vitals": "^1.1.1"
+  }
+}
