@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import axios from 'axios';
 import Home from './components/Home/Home';
-import Profile from './components/Profile/Profile';
+import PageB from './components/PageB/PageB';
 
 class App extends Component {
   state = {
@@ -33,8 +33,9 @@ axios.get('http://localhost:8080/home')
       <div className = 'app'>
         <BrowserRouter>
         <Switch>
-          <Route exact path={[`/`, `/home`]} render = {(props)=> <Home homeList = {homeList} contactList={contactList} profileList = {profileList}{...props} />} />
-          <Route exact path={[`/`, `home/profile`]} render = {(props)=> <Profile homeList = {homeList} contactList={contactList} profileList = {profileList}{...props} />} />
+          <Route path='/' exact component={Home} />
+          
+          <Route path='/pageb' exact component={PageB} />
         </Switch>
         </BrowserRouter>
       </div>

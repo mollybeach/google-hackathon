@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Home.scss';
 import Graphic from '../../assets/images/homepage_graphic.png';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -24,7 +25,7 @@ const Home = () => {
                         </div>
                         <div className="main__symptom-checker-right">
                             <img className="main__graphic" src={Graphic} alt=""/>
-                            <button className="main__button">Start checkup</button>
+                            <Link to='/pagea'><button className="main__button">Start checkup</button></Link>
                         </div>
                     </article>
                     <article className='main__article-two'></article>
