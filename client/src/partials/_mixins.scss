@@ -1,5 +1,4 @@
-@use './typography';
-@use "./variables" as *;
+@use './variables' as *;
 
 //Breakpoints
 @mixin tablet {
@@ -17,50 +16,57 @@
 //Text Styles- Desktop
 
 @mixin d-header {
-    font-family: $font-family-bold;
+    font-family: $font-family;
     font-size: 1.875rem;
     line-height: 2.25rem;
+    font-weight: 700;
 	color: $text-black;
 }
 
 @mixin d-subheader {
-	font-family: $font-family-med;
+	font-family: $font-family;
     font-size: 1.875rem;
     line-height: 2.25rem;
+    font-weight: 500;
 	color: $text-black;
 }
 
 @mixin d-subheader-grey {
-	font-family: $font-family-med;
+	font-family: $font-family;
     font-size: 1.75rem;
     line-height: 2rem;
 	color: $text-grey;
+    font-weight: 500;
 }
 
 @mixin d-paragraph-bold {
-	font-family: $font-family-bold;
+	font-family: $font-family;
     font-size: 1.125rem;
     line-height: 1.25rem;
 	color: $text-black;
+    font-weight: 700;
 }
 
 @mixin d-paragraph-large {
-	font-family: $font-family-reg;
+	font-family: $font-family;
     font-size: 1.375rem;
     line-height: 1.25rem;
 	color: $text-grey;
+    font-weight: 400;
 }
 
 @mixin d-paragraph-medium {
-	font-family: $font-family-reg;
+	font-family: $font-family;
     font-size: 1.25rem;
     line-height: 1.15rem;
 	color: $text-grey;
+    font-weight: 400;
 }
 
 @mixin d-paragraph-small {
-	font-family: $font-family-reg;
+	font-family: $font-family;
     font-size: 1rem;
     line-height: 1rem;
 	color: $text-grey;
+    font-weight: 400;
 }
