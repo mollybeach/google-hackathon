@@ -8,9 +8,10 @@
     background-color: $primary-background;
     max-height: 12.5rem;
     @include tablet {
-      max-height: 11.625rem;
+      height: 60px;
       flex-direction: row;
       padding: 0 0rem;
+      border: 0.75px #D5D7DB solid;
      // justify-content: center;
     }
 
@@ -20,23 +21,33 @@
     &__company {
         display: inline;
         width: 125%;
-        padding-top: $increment4-px;
+       // padding-top: 14px;
+      
         @include d-header;
+         color: #5A5A5A;
+         height: 35px;
+         width: 76px;
+        left: 171px;
+        top: 14px;
+        border-radius: nullpx;
+
  
 
        }
     &__logo {
-       margin-left: 50%;
+       //margin-left: 5%;
        width: 20%;
        padding-top: $increment1-px;
+       
       }
   
     &__nav {
+      margin-top: 8px;
       width: 100%;
       max-height: 8.5rem;
       display: flex;
       //flex-direction: column;
-      align-items: center;
+      
       justify-content: space-evenly;
   
       @include tablet {
@@ -64,11 +75,12 @@
       text-decoration: none;
       width: 10.1875rem;
       height: 2.25rem;
-      color: #BDC5D5;
+      color: #5A5A5A;
       border-radius: 20px;
-      background-color: #232940;
-      font-size: 0.8125rem;
-      margin: $increment2-px;
+      //margin-top:  8px;
+     // background-color: #FFFFFF;
+      font-size: 20px;
+      //margin-top: 18px;
      
   
       &:hover {
@@ -79,7 +91,7 @@
       }
   
       &:active {
-        background-color: #13182C;
+        //background-color: #FFFFFF;
         color: grey;
       }
   
@@ -88,8 +100,8 @@
       }
       
       &--active {
-        background-color: #13182C;
-        color: grey;
+        //background-color: #13182C;
+        color: #3A88F0;
       }
     }
     &__search-input {
@@ -99,12 +111,11 @@
 		background-position-y: center;
 		background-position-x: $increment2-rem;
 		padding-left: $increment5-rem;
-		height: $increment5-rem;
 		border-radius: $increment0-rem;
-		border: solid 1px grey;
-		background-color: grey;
-		width: 66.25vw; //252-40= 212/320=66.25vw
-		height: $increment6-rem;
+		border: solid 1px #C4C4C4;
+		background-color: white;
+		width: 391px; //252-40= 212/320=66.25vw
+		height:44px;
      
 		justify-content: right;
 		&:active {
@@ -114,11 +125,21 @@
 			border-color:blue;
 		}
 		@include tablet{
-            margin-top: 5%;
+           // margin-top: 5%;
 			width: 300px;
            // width: 25%;
 			
 		}
 	
 	}
+  &__avi {
+    width:  40px;
+    height:  40px;
+    border-radius: 33.3px; //circle
+    margin-right: $increment2-px;
+    position: relative;
+    @include tablet {
+        margin-top: $increment2-px 1.3vw 0 0;
+    }
+}
   }
