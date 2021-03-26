@@ -1,10 +1,12 @@
 import React from 'react';
 import './PageB.scss';
+import PageBImg from '../../assets/images/PageB.PNG';
 
 function PageB () {
     return (
         <section className="mainb">
-            <div className="main__component-pageb">
+            <img src={PageBImg} className="mainb__img"/>
+            {/* <div className="main__component-pageb">
                 <div className="main__article-pageb">
                     <h2>Is this information still accurate?</h2>
                     <p>We just wanted to make sure your health information is still up-to-date 
@@ -20,11 +22,11 @@ function PageB () {
                     </div>
                     <a href="/"><img src='' />Back</a>
                     <div>
-                        <button>Update Now</button>
+                        <button className="main__button-b-grey">Update Now</button>
                         <button>Next</button>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 }
