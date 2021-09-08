@@ -4,6 +4,6 @@ Google Hackathon: Web Developers: Kathleen Gladstone, Molly Beach, Farzana Shamp
 
 
 ![GitHub Logo](client/src/assets/images/ex.png)
-
+![GitHub Logo](client/src/assets/images/ex2.png)
 
 
